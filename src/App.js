@@ -1,7 +1,7 @@
 import React from "react";
 import Add from "./add.js";
 import List from "./list.js";
-import Delete from "./delete.js";
+// import Delete from "./delete.js";
 
 class App extends React.Component {
   constructor(props) {
@@ -23,12 +23,7 @@ class App extends React.Component {
     this.setState({ todos });
   }
   //删除todo
-  deleteTodo(todo) {
-    const { todos } = this.state;
-    todos.shift(todo);
-    this.setState({ todos });
-  }
-
+  
   render() {
     const { todos } = this.state;
     return (
